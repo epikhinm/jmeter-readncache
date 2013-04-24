@@ -1,1 +1,12 @@
-This file was created by IntelliJ IDEA 12.1.1 for binding GitHub repository
+==ReadNCache JMeter function
+
+Use it for read files as ${__FileToString()} and cache it into Concurrent LRU cache.
+
+Example:
+${__FileToString("/tmp/dataset.txt",,)} --> ${__ReadNCache("/tmp/dataset.txt")}
+
+To control LRU cache use options:
+// Capacity of LRU Cache. Default is 1000
+jmeter.readncache.capacity=1000
+// Concurrency level of LRU Cache. Default is 16
+"jmeter.readncache.concurrency_level=16
