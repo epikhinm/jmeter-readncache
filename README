@@ -9,4 +9,4 @@ To control LRU cache use options:
 // Capacity of LRU Cache. Default is 1000
 jmeter.readncache.capacity=1000
 // Concurrency level of LRU Cache. Default is 16
-"jmeter.readncache.concurrency_level=16
+jmeter.readncache.concurrency_level=16
